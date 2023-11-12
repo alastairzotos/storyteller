@@ -6,6 +6,18 @@ I considered a few UI libraries such as MUI, Antd or Chakra, but since I wanted 
 
 I initially setup the project with Tailwind but ended up mostly using Sass for styling.
 
+### Running
+
+Start with:
+```sh
+yarn
+```
+
+Then:
+```sh
+yarn dev
+```
+
 ### What could be improved
 
 * The sort indicators on the table could use some work. They're not aligned correctly and the images are blurry
