@@ -1,0 +1,9 @@
+@import "@/styles/base";
+
+.sidebar-toggle {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

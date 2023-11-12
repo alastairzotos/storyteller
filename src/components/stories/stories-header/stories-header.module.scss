@@ -1,0 +1,22 @@
+@import "@/styles/base";
+
+.header {
+  color: $common-black;
+  background-color: $background-grey-50;
+  padding: $gap;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: "ss04" on;
+  }
+}

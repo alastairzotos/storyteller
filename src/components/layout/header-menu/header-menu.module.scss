@@ -1,0 +1,9 @@
+@import "@/styles/base";
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+
+  margin-right: $gap;
+}

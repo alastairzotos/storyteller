@@ -1,0 +1,36 @@
+@import "@/styles/base";
+
+.base {
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  width: 8px;
+  height: 10px;
+
+  margin-left: 4px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.unsorted {
+  @extend .base;
+
+  width: 14px;
+
+  background-image: url('/icons/si-up-down.png');
+}
+
+.up {
+  @extend .base;
+
+  background-image: url('/icons/si-up.png');
+}
+
+.down {
+  @extend .base;
+
+  background-image: url('/icons/si-down.png');
+}

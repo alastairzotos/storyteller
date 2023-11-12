@@ -1,0 +1,77 @@
+$text-white: #ffffff;
+$link: #1C62EB;
+
+$common-black: #171A25;
+$common-black-secondary: rgba(23, 26, 37, 0.75);
+
+$background-dark: #171A25;
+$background-grey-50: #F8F8FA;
+$background-grey-200: #D3D4D9;
+$background-grey-300: #BBBCC2;
+$background-grey-400: #A3A4AB;
+$background-dark-hover: #3C4461;
+$background-dark-selected: #292F48;
+
+$border: #BBBCC2;
+
+$accent-dark: #76A0F0;
+$accent-light: #8db0f0;
+
+$header-height: 60px;
+$sidebar-width: 228px;
+
+$gap: 30px;
+
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+
+@mixin mobile {
+  @media only screen and (max-width: $small-screen) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: $medium-screen) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $medium-screen) {
+    @content;
+  }
+}
+
+.hide-mobile {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.hide-tablet {
+  display: block;
+  
+  @include tablet {
+    display: none;
+  }
+}
+
+.show-tablet {
+  display: none;
+  
+  @include tablet {
+    display: block;
+  }
+}

@@ -1,0 +1,85 @@
+@import "@/styles/base";
+
+.sidebar {
+  background-color: $background-dark;
+  position: static;
+
+  min-width: $sidebar-width;
+  height: calc(100vh - $header-height);
+
+  z-index: 200;
+
+  @include tablet {
+    position: absolute;
+    left: 0;
+
+    transition: left 0.3s ease-in-out;
+  }
+
+  li {
+    text-wrap: nowrap;
+    overflow: hidden;
+    padding-left: 20px;
+
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: $text-white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: "ss04" on;
+
+    border-left: 4px solid transparent;
+  }
+
+  a {
+    .selected {
+      background-color: $background-dark-selected;
+      border-left: 4px solid $accent-dark;
+    }
+
+    :hover {
+      background-color: $background-dark-hover;
+    } 
+  }
+}
+
+.hidden {
+  left: -$sidebar-width;
+}
+
+.backdrop {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  z-index: 100;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: $header-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #000;
+    opacity: 0.8;
+  }
+}
+
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #484848 0%, rgba(72, 72, 72, 0) 100%);
+  width: 100%;
+  height: 2px;
+}
+
+.top-divider {
+  margin-top: 0;
+}

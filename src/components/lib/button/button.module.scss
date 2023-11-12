@@ -1,0 +1,62 @@
+@import "@/styles/base";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+  min-height: 32px;
+  min-width: 32px;
+
+  padding: 5px 16px;
+  font-size: 12px;
+
+  border: none;
+  border-radius: 3px;
+
+  transition: background-color 0.1s ease-in-out;
+  
+  img {
+    width: 12px;
+    height: 14px;
+  }
+}
+
+.primary {
+  @extend .button;
+
+  color: $text-white;
+  background-color: #1DB56C;
+
+  &:hover {
+    background-color: #21d17c;
+  }
+
+  &:active {
+    background-color: #127545;
+  }
+}
+
+.danger {
+  @extend .button;
+
+  color: #D24747;
+  border: 1px solid #D24747;
+
+  background-color: #fff;
+
+  &:hover {
+    background-color: #fae1e1;
+  }
+
+  &:active {
+    background-color: #c9adad;
+  }
+}
+
+.adornment {
+  @extend .button;
+
+  background-color: $background-grey-200;
+}

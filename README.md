@@ -1,40 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Storyteller Task
 
-## Getting Started
+I opted to use NextJS for this simply for the ease of setting everything up, and because it future-proofs everything.
 
-First, run the development server:
+I considered a few UI libraries such as MUI, Antd or Chakra, but since I wanted to implement the styles correctly without fighting with an existing library's styles I decided to make all the components and styles myself.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I initially setup the project with Tailwind but ended up mostly using Sass for styling.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### What could be improved
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* The sort indicators on the table could use some work. They're not aligned correctly and the images are blurry
+* The table header scrolls up after you've finished scrolling the table
+* Some of the highlighting for focused inputs could look a bit nicer
+* It would've been nice to have an `<IconButton />` component or something so that I could avoid putting `<Image />` components inside `<Button>`s
+* I'm not certain that all needed accessibility features are there. I used appropriate html tags wherever possible and `aria-` props wherever else I thought was necessary.

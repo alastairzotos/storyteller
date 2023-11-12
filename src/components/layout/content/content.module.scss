@@ -1,0 +1,21 @@
+@import "@/styles/base";
+
+.content {
+  width: 100%;
+  height: calc(100vh - $header-height - $gap);
+  overflow-y: scroll;
+
+  background-color: #fff;
+
+  margin-right: $gap;
+  margin-bottom: $gap;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  @include tablet {
+    border-radius: 0;
+    height: calc(100vh - $header-height);
+    margin: 0;
+  }
+}

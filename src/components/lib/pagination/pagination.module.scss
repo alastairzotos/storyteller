@@ -1,0 +1,11 @@
+@import "@/styles/base";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  input {
+    width: 60px;
+  }
+}

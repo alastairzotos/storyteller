@@ -1,0 +1,14 @@
+@import "@/styles/base";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: $gap;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
